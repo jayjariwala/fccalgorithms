@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>Roman Numeral Algorithm FCC</title>
+</head>
+
+<script>
+
+function convertToRoman(num)
+{
+  var numbers = [1,5,10,50,100,500,1000];
+  var romanNum=['I','V','X','L','C','D','M'];
+var roman = [];
+  numbers.forEach(function(each){
+    if(each == num)
+    {
+     roman.push(romanNum[numbers.indexOf(each)]);
+    }
+    else {
+
+      }
+  });
+return roman.join();
+}
+
+var value=convertToRoman(10);
+console.log("Roman Number is"+value);
+
+</script>
+<body>
+  sloved by Jay Jariwala
+</body>
+</html>
