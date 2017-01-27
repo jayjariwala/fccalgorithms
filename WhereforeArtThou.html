@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>Where Fore Art Thou</title>
+  <script type="text/javascript">
+
+  function whatIsInAName(collection, source) {
+
+    // What's in a name?
+    var arr = [];
+    // Only change code below this line
+    var compare=Object.keys(source);
+
+    var filtered = collection.filter(function(obj){
+      var newarr=[];
+          compare.forEach(function(each){
+
+          if( obj.hasOwnProperty(each) && obj[each] === source[each] )
+          {
+            newarr.push(each);
+          }
+
+        })
+
+        console.log("the new array"+newarr);
+        return newarr;
+
+    })
+
+      console.log(filtered);
+
+    // Only change code above this line
+    return arr;
+  }
+
+  whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet",middle:"abc" }], { last: "Capulet", middle:"abc" });
+
+   </script>
+
+</head>
+<body>
+
+
+</body>
+
+</html>
